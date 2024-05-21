@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Frijole&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Frijole&family=Hubballi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Frijole&family=Hubballi&display=swap');
+
+body{
+    background-image: url('../img/bg.JPG');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Hubballi;
+    }
+
+.dark-mode {
+    background-image: url('../img/bgdark.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: rgb(223, 223, 223);
+}
+
+h1{
+    font-family: Fredoka;
+}
+
+header {
+    padding: 15px 10px;
+    text-align: center;
+}
+
+.dmode-button {
+    width:75px;
+    height:40px;
+    position: relative;
+    display: block;
+    background-image: url('..img/IMG_8875.jpg');
+    border-radius: 200px;
+    box-shadow: inset 0px 5px 15px rgba(0,0,0,0.4), inset 0px -5px 15px rgba(255,255,255,0.4);
+    cursor: pointer;
+}
+
+input {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+label:after {
+  content: "";
+  width:35px;
+  height: 35px;
+  position: absolute;
+  top:3px;
+  left: 5px;
+  background: linear-gradient(180deg,#eed1b9,#b3775b);
+  border-radius: 180px;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+}
+
+input:checked + label {
+    background-image: url('..img/IMG_8875.jpg');
+  }
+  input:checked + label:after {
+    left:70px;
+    transform: translateX(-100%);
+    background: linear-gradient(180deg,#777,#3a3a3a);
+  }
+  label, label:after {
+    transition: 0.3s
+  }
+
+  label:active:after{ 
+    width: 40px; 
+  }
+
+#home li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+h1{
+    font-size: 50px;
+}
+
+h2{
+    font-size: 40px;
+}
+
+h3{
+    font-size: 35px;
+}
+
+p{
+    font-size: 30px;
+}
+
+a{
+    font-size: 25px;
+}
+
+.aboutme {
+    text-align: center;
+    padding: 20px;
+    margin: 50px;
+    border-radius: 5px;
+}
+
+.aboutme:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.gallery {
+    text-align: center;
+    padding: 20px;
+    margin: 50px;
+    border-radius: 5px;
+}
+
+.gallery:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.blog {
+    text-align: center;
+    padding: 20px;
+    margin: 50px;
+    border-radius: 5px;
+}
+
+.blog a{
+    color: black;
+}
+
+.blog:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.contact {
+    text-align: center;
+    padding: 20px;
+    margin: 50px;
+    border-radius: 5px;
+}
+
+.contact a{
+    text-decoration: none;
+    color: black;
+}
+
+.contact:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
